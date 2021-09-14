@@ -137,8 +137,7 @@ def xor_of_binary_strings(str1, str2):
 	return bin(y)[2:].zfill(len(str2))
 
 
-def create_rounded_key_binary_list_from_hex_key(my_key="AABB09182736CCDD"):
-	my_key = "AABB09182736CCDD" # key need to be 8 bytes long(64 bits
+def create_rounded_key_binary_list_from_hex_key(my_key):
 	my_key = hex_key_to_64_bits(my_key)
 	permutated_key = permutate_key(my_key, KEY_PERMUTATION, 56)
 
